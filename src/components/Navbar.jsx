@@ -21,13 +21,13 @@ export default function Navbar() {
 
           {/* Social media icons */}
           <div className="hidden sm:flex items-center space-x-3">
-            <a href="https://linkedin.com" className="text-gray-300 hover:text-white">
+            <a href="https://www.linkedin.com/in/An-s-h" className="text-gray-300 hover:text-white">
               <Linkedin className="h-5 w-5" />
             </a>
             <a href="https://twitter.com" className="text-gray-300 hover:text-white">
               <Twitter className="h-5 w-5" />
             </a>
-            <a href="https://github.com" className="text-gray-300 hover:text-white">
+            <a href="https://github.com/An-s-h" className="text-gray-300 hover:text-white">
               <Github className="h-5 w-5" />
             </a>
           </div>

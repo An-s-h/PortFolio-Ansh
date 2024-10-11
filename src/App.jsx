@@ -4,10 +4,15 @@ import Hero from "./components/Hero";
 import Technologies from "./components/Technologies";
 import Projects from "./components/Projects";
 import Contact from './components/Contact';
+import CustomCursor from "./components/CustomCursor";
 
 const App = () => {
   return (
-    <div className="overflow-x-hidden text-white antialiased">
+    <div 
+      className="overflow-x-hidden text-white antialiased" 
+      style={{ cursor: 'none', overflowY: 'auto', scrollbarWidth: 'none', msOverflowStyle: 'none' }} // Hides scrollbar and native cursor
+    >
+      <CustomCursor/>
       {/* Background with strong radial gradient for glowing effect */}
       <div className="fixed inset-0 -z-10 h-full w-full bg-[#121212]">
         {/* Glow effect using multiple radial gradients */}
@@ -25,7 +30,6 @@ const App = () => {
       <div className="relative container mx-auto px-8">
         <Navbar />
         <Hero />
-      
         <Projects />
         <Technologies />
         <Contact />
